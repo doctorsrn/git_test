@@ -1,0 +1,33 @@
+20161212  描述：在使用sudo apt-get install **包时，出现了“无法修正错误，因为您要求某些软件包保持现状，就是它们破坏了软件包间的依赖关系”的问题  
+          解决办法：修改源设置，勾选“推荐更新”选项和其他的一些选项，然后sudo apt-get update，再进行安装即可解决
+20161214  git使用笔记：
+          添加git账号： git config --global user.email "doctorsrn@gmail.com"
+                        git config --global user.name "doctorsrn"
+
+          首先在github上创建远程仓库Repository，复制该Repository的SSH地址，然后在本地建立本地仓库：git init，将当前文件夹下所有文件添加至本地仓库：
+          git add -A ., 再建立本地仓库和远程仓库的连接git remote add origin ssh_address.git。完成后就可以进行本地仓库和远程仓库之间的pull和push操作了。
+          push操作（三步）：  git add changed_file  //添加已经更改的文件，即要提交的文件
+                             git commit -m "first commit*****"  //填写commit
+                             git push origin master   //将本地（origin）仓库push到远程仓库的master分支
+          pull操作（一步）：   git pull origin master  //将远程仓库的master分支pull到本地（origin）仓库
+          此外将github上的某个仓库clone至本地：git clone ssh_address.git
+20170111   picocom -b 115200 /dev/ttyUSB0 
+20170112   问题一：ROS出现的bug，launch之后出现错误可以尝试删除log目录：rm -r ~/.ros/log  然后在尝试
+           问题二：修改了.h文件的内容，如果不make clean而直接make burn的话修改的内容不会生效，因为.h文件不会重新产生bin文件，只有.c文件被修改之后
+           才会在make burn时重新生成bin文件。
+20170113   在使用rviz进行仿真时，如果出现Fixed Frame [map] does not exist的错误，多次重启rviz能解决该问题。
+20170115   tmuxs使用：创建一个竖直放置的窗格很容易，按下 Ctrl-b %
+                      创建一个水平的窗格，按下 Ctrl-b “
+           git使用：再添加新的文件夹时，如果该文件夹或其子目录下存在.git文件则无法git push到远程仓，解决步骤：
+             1.删除.git .gitignore文件
+             2.git rm --cached directory
+               git add directory     注：directory为子文件夹的路径
+             3.重新git commit 然后在git push即可
+           此外，git对于空文件夹不会push到远程仓，可以在空文件夹随便放一个文件，例如touch .keep  或者  touch .gitignore即可上传
+           另外，对于不想上传的文件可以使用.gitignore进行忽略：首先在.git所在的文件夹下创建.gitignore文件：touch .gitignore
+                然后打开：vim .gitignore 将不想上传的文件和文件夹写入，例如：CMakeLists.txt
+                                                                          rbx1/
+                                                                          build-beginner_tutorials-Desktop-Default/
+               即可忽略上述文件和文件夹。
+
+                 
