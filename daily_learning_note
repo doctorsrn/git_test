@@ -29,5 +29,6 @@
                                                                           rbx1/
                                                                           build-beginner_tutorials-Desktop-Default/
                即可忽略上述文件和文件夹。
+20170214  同步开发板的时间为网络时间： sudo ntpdate cn.pool.ntp.org
 
                  
