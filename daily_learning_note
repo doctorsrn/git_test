@@ -36,5 +36,6 @@
 20170301  设置arm-gcc和openocd为全局工具链：1.安装openocd：打开openocd目录，使用sudo make install命令安装；
                                            2.添加arm-gcc到全局环境变量，export PATH=$PATH:/home/srn/openre_armtest/5_Development_Toolchain/gcc-arm-none-eabi-5_4-2016q2/bin/
                                           完成后就可以在其他目录编译openre工程
+20170303  安装系统监视器，sudo apt-get indicator-multiload
 
                  
