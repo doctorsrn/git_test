@@ -37,5 +37,18 @@
                                            2.添加arm-gcc到全局环境变量，export PATH=$PATH:/home/srn/openre_armtest/5_Development_Toolchain/gcc-arm-none-eabi-5_4-2016q2/bin/
                                           完成后就可以在其他目录编译openre工程
 20170303  安装系统监视器，sudo apt-get indicator-multiload
+          修改Ubuntu开机启动画面，将图片文件移动至/boot/grub目录，然后使用sudo update-grup将自动识别并添加。
+20170308  在Ubuntu下设置ShadowSocks为全局代理的方法：http://blog.csdn.net/hanshileiai/article/details/52624303
+           sudo pip install genpac
+	   pip install --upgrade genpac
+           mkdir vpnPAC
+	   cd vpnPAC
+	   touch user-rules.txt
+           genpac -p "SOCKS5 127.0.0.1:1080" --gfwlist-proxy="SOCKS5 127.0.0.1:1080" --output="autoproxy.pac" --gfwlist-url="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt" --user-rule-from="user-rules.txt"
+           设置全局代理
 
-                 
+          点击：System settings > Network > Network Proxy ;
+          选择 Method 为 Automatic
+	  设置 Configuration URL 为 autoproxy.pac 文件的路径
+	  点击 Apply System Wide。
+	  格式如：file:///home/{user}/vpnPAC/autoproxy.pac 
