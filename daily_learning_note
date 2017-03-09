@@ -52,3 +52,4 @@
 	  设置 Configuration URL 为 autoproxy.pac 文件的路径
 	  点击 Apply System Wide。
 	  格式如：file:///home/{user}/vpnPAC/autoproxy.pac 
+20170309  fcitx占用率高的解决办法：使用htop杀死fcitx进程，然后使用：fcitx & 重启该服务
