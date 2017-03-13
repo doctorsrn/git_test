@@ -53,3 +53,6 @@
 	  点击 Apply System Wide。
 	  格式如：file:///home/{user}/vpnPAC/autoproxy.pac 
 20170309  fcitx占用率高的解决办法：使用htop杀死fcitx进程，然后使用：fcitx & 重启该服务
+20170313  如何打开.appimage文件：
+           首先 chmod a+x **.appimage
+           然后 ./**.appimage 即可
