@@ -11,7 +11,7 @@
                              git push origin master   //将本地（origin）仓库push到远程仓库的master分支
           pull操作（一步）：   git pull origin master  //将远程仓库的master分支pull到本地（origin）仓库
           此外将github上的某个仓库clone至本地：git clone ssh_address.git
-20170111   picocom -b 115200 /dev/ttyUSB0 
+20170111   picocom -b 115200 /dev/ttyUSB0 或者使用cutecom
 20170112   问题一：ROS出现的bug，launch之后出现错误可以尝试删除log目录：rm -r ~/.ros/log  然后在尝试
            问题二：修改了.h文件的内容，如果不make clean而直接make burn的话修改的内容不会生效，因为.h文件不会重新产生bin文件，只有.c文件被修改之后
            才会在make burn时重新生成bin文件。
