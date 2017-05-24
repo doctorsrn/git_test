@@ -85,6 +85,10 @@ proxychains4 wget http://xxx.com/xxx.zip
            find . -name sogou*
            find . -name Sogou*
            将两次搜索到的配置文件删除即可。
+            rm -r SogouPY
+            rm -r SogouPY.users/
+            rm -r ./sogou-qimpanel/
+
 
 
 
