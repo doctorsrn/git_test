@@ -91,4 +91,9 @@ proxychains4 wget http://xxx.com/xxx.zip
 
 
 
+20170911 tensorflow install:
+         1. install pip3: sudo apt-get install python3-pip
+         use to 'sudo apt-get install aptitude' & 'sudo apt-get install python3-pip' to solve dependents problem 
+         2. install tensorflow: sudo pip3 install --upgrade  https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.3.0-cp34-cp34m-linux_x86_64.whl
+          TODO: cannot install tensorflow by using: sudo pip/pip3 install tensorflow
 
