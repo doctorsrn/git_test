@@ -102,3 +102,6 @@ proxychains4 wget http://xxx.com/xxx.zip
   2. ipython notebook package name in emacs is "ein"
   3.keybinding reference: https://millejoh.github.io/emacs-ipython-notebook/#ein:console-args
 Note: jupyter notebook must work with passwd mode. Reference web:http://www.jianshu.com/p/c5cc672aae63
+
+20180125: github+hexo-->myblog:https://www.jianshu.com/p/a3ab83dba041
+                               https://zhuanlan.zhihu.com/p/26625249
