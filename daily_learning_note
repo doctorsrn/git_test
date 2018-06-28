@@ -106,3 +106,7 @@ Note: jupyter notebook must work with passwd mode. Reference web:http://www.jian
 20180125: github+hexo-->myblog:https://www.jianshu.com/p/a3ab83dba041
                                https://zhuanlan.zhihu.com/p/26625249
           multi-pc hexo:http://blog.csdn.net/Monkey_LZL/article/details/60870891
+
+20180628: ubuntu txt file encodeing mistake: https://www.jb51.net/article/138697.htm
+          detective file encoding: chardet3 filename
+          use gedit to open file: gedit --encoding ENCODING_TYPE
