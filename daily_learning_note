@@ -110,3 +110,11 @@ Note: jupyter notebook must work with passwd mode. Reference web:http://www.jian
 20180628: ubuntu txt file encodeing mistake: https://www.jb51.net/article/138697.htm
           detective file encoding: chardet3 filename
           use gedit to open file: gedit --encoding ENCODING_TYPE
+
+          ROS python2 cv2:https://stackoverflow.com/questions/48039563/import-error-ros-python3-opencv
+
+20180630: make spacemacs to support Chinese input method:
+          1.change .spacemacs config file, add chinese layer
+          2. use " env LC_CTYPE=zh_CN.UTF-8 emacs" to start spacemacs
+          reference: https://www.jianshu.com/p/7a5eab90013b
+                     https://www.jianshu.com/p/354896569a90
