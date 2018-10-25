@@ -118,3 +118,5 @@ Note: jupyter notebook must work with passwd mode. Reference web:http://www.jian
           2. use " env LC_CTYPE=zh_CN.UTF-8 emacs" to start spacemacs
           reference: https://www.jianshu.com/p/7a5eab90013b
                      https://www.jianshu.com/p/354896569a90
+
+20181025: 
