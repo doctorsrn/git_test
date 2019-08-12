@@ -120,3 +120,21 @@ Note: jupyter notebook must work with passwd mode. Reference web:http://www.jian
                      https://www.jianshu.com/p/354896569a90
 
 20181025: 
+
+20190110：# Ubuntu 16.04 升级python3.5到python3.6版本
+由于python3.5下安装了很多东西，不想卸载python3.5，所以需要使python3.5和python3.6共存。
+1）安装python3.6，使用update-alternatives进行共存版本管理：参考https://blog.csdn.net/chaiyu2002/article/details/82698376
+2）经过步骤1后会出现pip3无法使用的问题和ctrl+alt+t无法打开终端的问题，解决办法强制重新安装pip3：https://stackoverflow.com/questions/49940813/pip-no-module-named-internal
+对应的命令：
+```
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+sudo python3 get-pip.py --force-reinstall
+```
+第一条命令可能会执行失败，要多次尝试运行。
+
+
+另外的参考网站：https://www.cnblogs.com/code-wangjun/p/9981634.html
+
+
+
+20190309: pychcarm 使用时无法导入自己py文件中的函数，解决办法：https://blog.csdn.net/qq_30622831/article/details/80978118
